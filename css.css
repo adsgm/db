@@ -1,0 +1,1447 @@
+ 
+ /* @import url('http://example.com/example_style.css'); */
+
+ /***********************************************/
+ /* CSS @imports must be at the top of the file */
+ /* Add them above this section                 */
+ /***********************************************/
+
+ /****************************************/
+ /* HubSpot Style Boilerplate            */
+ /****************************************/
+
+ /* This responsive framework is required for all styles. */
+ {% include "hubspot/styles/responsive/required_base.css" %}
+
+ /* These includes are optional, but helpful. */
+ {% include "hubspot/styles/responsive/modules.css" %}
+ {% include "hubspot/styles/patches/recommended.css" %}
+
+
+ /*****************************************/
+ /* Start your style declarations here    */
+ /*****************************************/
+ 
+ @font-face {
+ font-family: 'KievitSlabOT';
+ src: url("http://cdn2.hubspot.net/hub/308283/file-460966953-eot/fonts/KievitSlabWeb.eot");
+ src: local('KievitSlabOT'),
+   url("http://cdn2.hubspot.net/hub/308283/file-462546561-woff/fonts/KievitSlabWeb.woff") format("woff"),
+   url("http://cdn2.hubspot.net/hub/308283/file-458642604-otf/fonts/KievitSlabOT.otf") format("opentype");
+ }
+ 
+ @font-face {
+ font-family: 'KievitSlabWeb-Bold';
+ src: url("http://cdn2.hubspot.net/hub/308283/file-464069132-eot/fonts/KievitSlabScWeb-Bold.eot");
+ src: local('KievitSlabWeb-Bold'),
+   url("hhttp://cdn2.hubspot.net/hub/308283/file-460966928-woff/fonts/KievitSlabWeb-Bold.woff") format("woff"),
+   url("http://cdn2.hubspot.net/hub/308283/file-465421195-otf/fonts/KievitSlabOT-Bold.otf") format("opentype");
+ }
+ 
+ @font-face {
+ font-family: 'KievitSlabWeb-Medium';
+ src: url("http://cdn2.hubspot.net/hub/308283/file-464069157-eot/fonts/KievitSlabWeb-Medium.eot");
+ src: local('KievitSlabWeb-Medium'),
+   url("http://cdn2.hubspot.net/hub/308283/file-461028323-woff/fonts/KievitSlabWeb-Medium.woff") format("woff"),
+   url("http://cdn2.hubspot.net/hub/308283/file-462333281-otf/fonts/KievitSlabOT-Medium.otf") format("opentype");
+ }
+ 
+ @font-face {
+ font-family: 'KievitSlabOT-Book';
+ src: url("http://cdn2.hubspot.net/hub/308283/file-461014158-eot/fonts/KievitSlabWeb-Book.eot");
+ src: local('KievitSlabOT-Book'),
+   url("http://cdn2.hubspot.net/hub/308283/file-464098777-woff/fonts/KievitSlabWeb-Book.woff") format("woff"),
+   url("http://cdn2.hubspot.net/hub/308283/file-460977408-otf/fonts/KievitSlabOT-Book.otf") format("opentype");
+ }
+
+ @font-face {
+ font-family: 'KievitSlabScWeb-MediumItalic';
+ src: url("http://cdn2.hubspot.net/hub/308283/file-493905171-eot/fonts/KievitSlabWeb-MediumItalic.eot");
+ src: local('KievitSlabScWeb-MediumItalic'),
+   url("http://cdn2.hubspot.net/hub/308283/file-495190947-woff/fonts/KievitSlabWeb-MediumItalic.woff") format("woff"),
+   url("http://cdn2.hubspot.net/hub/308283/file-464359104-otf/fonts/KievitSlabOT-MediumItalic.otf") format("opentype");
+ }
+ 
+ @font-face {
+ font-family: 'KievitSlabScWeb-Italic';
+ src: url("http://cdn2.hubspot.net/hub/308283/file-497239085-eot/fonts/KievitSlabWeb-BookItalic.eot");
+ src: local('KievitSlabScWeb-Italic'),
+   url("http://cdn2.hubspot.net/hub/308283/file-493922486-woff/fonts/KievitSlabWeb-BookItalic.woff") format("woff"),
+   url("http://cdn2.hubspot.net/hub/308283/file-468422541-otf/fonts/KievitSlabOT-Italic.otf") format("opentype");
+ }
+ @font-face {
+ font-family: 'KievitSlabOT-Light';
+ src: url("http://cdn2.hubspot.net/hub/308283/file-471338290-eot/fonts/KievitSlabScWeb-Light.eot");
+ src: local('KievitSlabOT-Light'),
+   url("http://cdn2.hubspot.net/hub/308283/file-471385250-woff/fonts/KievitSlabScWeb-Light.woff") format("woff"),
+   url("http://cdn2.hubspot.net/hub/308283/file-468449256-otf/fonts/KievitSlabOT-Light.otf") format("opentype");
+ }
+ 
+ /*------ Home Page Jurgen -----*/
+body{
+    font-family: 'KievitSlabOT', Helvetica, sans-serif;
+    font-size:15px;
+    color: #666;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+h1{
+    font-family: "KievitSlabWeb", Helvetica, sans-serif;
+    font-size:31px;
+    color:#fff;
+    font-weight:normal;
+}
+.contenedor{
+    width: 1024px !important;
+    margin: 0 auto !important; 
+    float:none !important;
+}
+
+/*----- header list & button ----- */
+.headerprueba{
+    position: fixed;
+    background:url('http://cdn2.hubspot.net/hub/308283/file-484717439-png/Img_Site/bg-menu.png');
+    z-index: 999;
+    width: 100%;
+    height:172px;
+}
+
+.logo{
+    margin-top: -45px;
+}
+.ctatopmenu{
+    text-align: right; margin: 10px 0;
+}
+
+.ultop ul{
+   float: right !important;
+}
+
+.ultop ul > li{
+    padding: 0 10px 0 10px !important;
+}
+
+.ultop ul > li > a{
+    color: #6195c5 !important;
+    line-height: 30px !important;
+    margin-top: 5px;
+    
+}
+
+.ultop ul > li > a:hover{
+    color: #000 !important;
+    Background-color: #ffbe00 !important;
+}
+.ulbot{
+    width:100%;
+}
+.ulbot ul{
+   float: right !important;
+}
+
+.ulbot ul > li{
+    
+}
+
+.ulbot ul > li > a{
+    color: #fff !important;
+    font-family: 'KievitSlabOT-Light', serif !important;
+    font-size:22px !important;
+    width:100% !important;
+    max-width:190px !important;
+    padding:5px 15px !important;
+    font-weight: normal;
+}
+
+.ulbot ul > li > a:hover{
+    color: #999 !important;
+}
+
+.topbutton a{
+    background-color: #cc0000;
+    border-radius: 5px !important;
+    text-align: center;
+    padding: 5px 35px !important;
+    margin-top: 5px;
+    margin-right: 20px;
+    max-width: 50%;
+    color: #fff !important;
+    text-decoration: none !important;
+    display: block !important;
+    float: right;
+}
+
+.topbutton a:hover{
+    background-color: #999;
+    color: #fff !important;
+}
+
+/*----- Ventas Div -----*/
+
+.visionbc {
+    padding-top: 250px;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+}
+
+.visiondiv {
+    color: #fff;
+    margin-bottom: 70px;
+}
+
+.defaultbutton a{
+    background-color: #cc0000;
+    border-radius: 5px !important;
+    text-align: center;
+    padding: 15px 30px !important;
+    margin: 40px auto;
+    max-width: 30%;
+    color: #fff !important;
+    text-decoration: none !important;
+    display: block !important;
+}
+
+.defaultbutton a:hover{
+    background-color: #999;
+    color: #fff !important;
+}
+
+/*----- Grow your buisness div ------*/
+
+
+.growbc{
+    background-color: #6599cb;
+}
+
+.growdiv{
+    margin: 20px auto;
+    background-color: #fff;
+    height:370px;
+    padding:15px;
+}
+
+.growdiv h3{
+    font-family:'KievitSlabWeb-Medium', Helvetica, serif;
+    color: #2973b1;
+    font-size: 17px;
+    margin: 0 auto;
+    font-weight:normal;
+}
+
+.growdiv p{
+    font-size: 15px;
+    margin: 10px auto;
+    line-height: 1.5;
+    font-family:'KievitSlabOT', Helvetica, serif;
+}
+
+.growtextbox{
+    width: 80%;
+    margin: 10px auto;
+}
+.growdivcta{
+    text-align: center;
+}
+
+.businessviddiv{
+    background: url("http://cdn2.hubspot.net/hub/308283/file-460855130-jpg/Img_Site/ingmadero.jpg") no-repeat bottom left;
+    background-size: 60%;
+}
+
+.growviddiv{
+    margin: 20px auto;
+    background-color: #fff;
+}
+
+.growviddiv h3{
+    color: #2973b1;
+    font-size: 1em;
+    float: right;
+    margin-right: 30%;
+    margin-top: 30px;
+}
+
+.growviddiv h3 strong{
+    font-size: 40px;
+}
+
+.growviddiv p{
+    font-size: 1em;
+    margin-right: 15%;
+    float: right;
+}
+
+.growviddiv img{
+    float: left;
+}
+
+.bluebutton {
+    margin: 10px auto;
+    width: 70%;
+}
+
+.bluebutton a{
+    padding: 10px;
+    background-color: #2973b1;
+    border-radius: 5px !important;
+    text-align: center;
+    color: #fff !important;
+    text-decoration: none !important;
+    display: block !important;
+    font-size: .7em;
+}
+
+.bluebutton a:hover{
+    color: #fff !important;
+    background-color: #cccccc;
+}
+
+/*----- Conoce al Equipo -----*/
+
+
+.darkbutton{
+    width: 30%;
+    float: left;
+}
+
+.darkbutton a{
+    background-color: #555;
+    border-radius: 5px !important;
+    padding: 30px 0 !important;
+    margin: 10px 10px;
+    text-align: center;
+    color: #fff !important;
+    text-decoration: none !important;
+    display: block !important;
+    font-size: 1em;
+}
+
+.darkbutton a:hover{
+    color: #fff !important;
+    background-color: #cc0000;
+}
+
+.invbutton{
+    width: 30%;
+    float: left;
+}
+
+.invbutton a{
+    background-color: #cc0000;
+    border-radius: 5px !important;
+    padding: 30px 0 !important;
+    margin: 10px 10px;
+    text-align: center;
+    color: #fff !important;
+    text-decoration: none !important;
+    display: block !important;
+}
+
+.invbutton a:hover{
+    background-color: #999;
+    color: #fff !important;
+}
+
+.successdiv{
+    position: absolute;
+    top: 15%;
+    width: 100%;
+}
+
+.successdiv p{
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    line-height: 60px !important;
+}
+
+.successbuttons{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.teambc{
+    padding-top: 40px;
+    background-position:fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+    position: relative !important;
+    height:420px;
+}
+
+
+.buttondiv{
+    margin-top: 50px;
+}
+
+.visiontube img {
+    max-width: 50% !important;
+}
+
+.arrowimg img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
+.arrowimg img:hover{
+    background-color: #cc0000;
+    border-radius: 100%;
+}
+
+
+.exitobc, .boxmetnbd{
+    padding-top: 40px;
+    background-position:fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+    position: relative !important;
+    height: 420px !important;
+}
+
+.exitobc p{
+   font-family: 'KievitSlabScWeb-Italic', Helvetica, serif;
+   color: #FFF;
+   font-size: 21px;
+   line-height: 140%;
+}
+.exitodiv{
+    color: #fff;
+    width: 50%;
+    text-align: center;
+}
+
+.exitodiv h3{
+    color: #fff;
+}
+
+.exitodiv img{
+    margin-left:10px;
+}
+
+.conbutton a{
+    background-color: #cc0000;
+    border-radius: 5px !important;
+    text-align: center;
+    padding: 25px 60px !important;
+    margin: auto;
+    max-width: 50%;
+    color: #fff !important;
+    text-decoration: none !important;
+    display: block !important;
+}
+
+.conbutton a:hover{
+    background-color: #999;
+    color: #fff !important;
+}
+
+.contactanosdiv img:hover{
+    background-color: #999;
+    border-radius: 100px;
+}
+
+.contactanosdiv{
+    text-align: center;
+    font-family: 'KievitSlabOT', Helvetica, sans-serif;
+    color:#fff !important;
+    height:110px;
+    padding-top: 30px;
+}
+
+.razonesbc{
+    height:420px;
+}
+.razonesbc h1{
+    font-size:32px;
+    color:#2972b1;
+    margin: 15px 0 35px;
+    font-family:'KievitSlabWeb-Bold', Helvetica, serif;
+    text-align: center;
+    font-weight: normal;
+}
+.razonesbc h3{
+    font-size:22px;
+    color:#2972b1;
+    margin: 5px 0;
+    line-height: 25px !important;
+    font-family:'KievitSlabScWeb-MediumItalic', Helvetica, serif;
+    text-align: center;
+    font-weight: normal;
+}
+.razonesbc p{
+    font-size: 15px;
+    color: #000;
+    margin: 5px 0;
+    line-height: 25px !important;
+}
+
+.ampliabc h1, .blueboxservicios h1, .blueboxquienes h1, .bluebox2quienes h1{
+    font-family: 'KievitSlabOT', Helvetica, sans-serif;
+    font-size: 49px;
+    color: #369;
+    margin-bottom:15px;
+    text-align: center;
+    font-weight:normal;
+}
+.ampliabc h1{
+    color: #fff;
+}
+.bluebox2quienes{
+   margin-bottom:30px !important; 
+}
+.bluebox2quienes h1{
+    margin-bottom: 30px;
+    color: #FFF;
+}
+.blueboxquienes h1{
+    margin-top: 60px;
+}
+.ampliabox{
+    background: #6599cb;
+    height:420px !important;
+}
+
+.cajagrowdiv{
+    height:180px;
+}
+
+/* Inbound Marketing Jurgen */
+ 
+ .inboundbc{
+     background-repeat: no-repeat;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+    
+ }
+ 
+.mkt-img{
+    text-align: center;
+ }
+.inbounddiv{
+    color: #fff;
+ }
+ 
+ .arrowimg{
+    bottom: -1px;
+ }
+ 
+ .lbluebutton{
+    margin: 10px auto;
+    width: 30%;
+ }
+ 
+ .lbluebutton a{
+    background-color: #6194bf;
+    border-radius: 5px !important;
+    padding: 30px 50px !important;
+    text-align: center;
+    color: #fff !important;
+    text-decoration: none !important;
+    display: block !important;
+ }
+ 
+ .lbluebutton a:hover{
+    background-color: #999;
+    color: #fff !important; 
+ }
+ 
+ 
+ /* STAGES */
+ .stagetop{
+     padding-top:150px;
+     height:678px;
+     background-repeat: no-repeat;
+     background-position:center center;
+ }
+.stagetop h1{
+    font-family: 'KievitSlabWeb-Bold', Helvetica, sans-serif !important;
+    font-size: 76px !important;
+    line-height:80px !important;
+    color:#fff;
+    margin:10px 0;
+    font-weight:normal;
+    letter-spacing: -1px;
+}
+.stagetop h2{
+    font-family: 'KievitSlabOT-Book', Helvetica, sans-serif;
+    font-size: 33px !important;
+    color:#fff;
+    margin:10px 0;
+    font-weight: normal;
+    line-height: 38px;
+}
+
+/* PAGINA 404 */
+
+.content404{
+    background-image:url("http://cdn2.hubspot.net/hub/308283/file-473215366-jpg/Img_Site/not_found.jpg");
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: 800px;
+}
+.text404 h1{
+    font-family: 'KievitSlabWeb-Medium', Helvetica, sans-serif;
+    color: #FFF;
+    font-size: 50px !important;
+    font-weight: normal;
+    text-align: left;
+    background-color: rgba (0,0,0, 0.7);
+    display:inline;
+    line-height: 1.3;
+}
+.cdrobco404{
+    background: rgba (255,255,255, 0.7);
+    padding:15px;
+}
+.cdrobco404 h2, .cdrobco404 p , .cdrobco404 a{
+    font-family: 'KievitSlabWeb-Medium', Helvetica, sans-serif;
+    color: #333;
+    font-size: 39px;
+    font-weight: normal;
+    text-align: left;
+}
+.cdrobco404 a{
+    color:#cc0000;
+    font-size:22px;
+    text-decoration: none;
+}
+.cdrobco404 a:hover{
+    color: #920000;    
+}
+
+.cdrobco404 p{
+    font-size: 22px;
+}
+ .redpurpbutton{
+     float: left;
+     margin:5px;
+}
+
+.inboundbox{
+    width:600px;
+    margin:10px auto;
+}
+ .redpurpbutton a{
+     width:185px;
+     height:40px;
+     border-radius: 5px;
+     border: 3px solid #bf639a;
+     color: #fff !important;
+     text-align: center;
+     padding:15px;
+     background:#eb1f27;
+ }
+ 
+ /* PAGINA SERVICIOS */
+ .servicios-content h1, .inbound-content h1{
+     font-family: 'KievitSlabWeb-Bold', Helvetica, sans-serif;
+     color:#019ddd;
+     font-size:28px;
+     
+ }
+.servicios{
+    background: url(http://cdn2.hubspot.net/hub/308283/file-453708984-jpg/Img_Site/degradado.jpg);
+}
+.servicios img{
+    display: block; margin: 0 auto; padding-top: 100px;
+}
+
+.blueboxservicios, .blueboxquienes{
+    background:#c2d9ec;
+    width:100%;
+    height:330px;
+    margin:10px 0 0;
+}
+.blueboxquienes{
+    background: #6599cb;
+    margin-bottom:30px;
+}
+.blueboxquienes h2, .blueboxquienes h3{
+    color: white;
+    text-align: center;
+    font-family: 'KievitSlabOT-Book', Helvetica, sans-serif;
+    font-size: 33px !important;
+}
+.blueboxquienes h3{
+    font-size:22px !important;
+}
+.blueboxservicios h2{
+    color:#336699;
+    text-align: center;
+}
+.servicios-content h2{
+    color:#019ddd;
+    font-family: 'KievitSlabOT', Helvetica, sans-serif;
+    font-size:26px;
+}
+
+/*Pagina Quienes Somos*/
+
+.quienesbc{
+    padding-top: 200px;
+    background: url(" http://cdn2.hubspot.net/hub/308283/file-460508738-jpg/Img_Site/quienes_somos.jpg ") no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+}
+
+.quienesdiv{
+    margin-bottom: 50px;
+}
+
+.graybutton {
+    margin: 15px 0;
+    
+}
+
+.graybutton a {
+    font-family: 'KievitSlabWeb-Bold', Helvetica, sans-serif;
+    font-size: 22px;
+    background-color: #999999;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.graybutton a:hover {
+    background: #cc0000;
+}
+
+.quienesbox{
+    background:#fff;
+    width: 205px;
+    height: 255px;
+    padding: 10px;
+    margin: 0 0 10px;
+}
+
+.quienesimg{
+    width: 100%;
+    text-align: center;
+    float: left;
+}
+.quienestitle{
+    width: 100%;
+    float: left;
+    text-align: left;
+}
+.quienestitle h1{
+    font-size: 21px;
+    color: #333 !important;
+    margin: 1px 0;
+    text-align:left;
+}
+.quienestitle p{
+    font-size: 14px;
+    color: #999 !important;
+    margin: 1px 0;
+    text-align:left;
+}
+
+/*Pagina de Inicio*/
+.middlebox h1, .exitobc h1{
+    font-family: 'KievitSlabOT', Helvetica, sans-serif;
+    font-size: 49px;
+    color:#fff;
+    text-align: center;
+    font-weight: normal;
+    margin:10px auto;
+    line-height:59px;
+    width: 1024px;
+}
+
+ /* Pagina Proyectos */
+.proyectos{
+    background-position:center;
+    height: 477px;
+    clear:both;
+}
+
+.gpodestacados{
+    width: 100%;
+    background:#999;
+}
+.pdestacado, .lastpdestacado{
+    width: 20%;
+    height: 400px;
+    float: left;
+    margin-right: 5%;    
+}
+.lastpdestacado{
+    margin-right: 0 !important;
+}
+
+.contpdestacados{
+    margin:20px 0;
+}
+.contpdestacados h3{
+    font-size:26px !important;
+    color: #fff !important;
+    margin: 5px 0;
+    font-family: 'KievitSlabWeb-Medium';
+}
+.contpdestacados h2{
+    font-size: 22px !important;
+    color: #fff !important;
+    margin: 5px 0;
+    font-family: 'KievitSlabWeb-Medium', Helvetica, sans-serif;
+    font-style: oblique;
+}
+.contpdestacados p{
+    font-size: 17px !important;
+    color: #fff !important;
+    margin: 5px 0;
+    font-family: 'KievitSlabWeb-Book', Helvetica, sans-serif;
+}
+
+/* Footer*/
+.footerbox{
+    width:100%;
+    background: #232323;
+}
+.footerbox h3{ 
+    margin: 0;
+    font-family: 'KievitSlabOT-Light';
+    font-weight: normal;
+    font-size: 39px;
+}
+.redesbox{
+    width: 100%;
+    text-align:left;
+}
+.redes{
+    width: 47px;
+    height:47px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footermenu h5{
+    font-size: 14px;
+    color: #ccc;
+    margin: 5px 0 20px;
+}
+.footermenu ul{
+    list-style: none;
+    padding: 0 !important;
+    margin:0;
+}
+.footermenu a{
+    text-decoration:none;
+    font-size: 14px !important;
+    color: #999;
+}
+.conttitle h1{
+    font-size:31px;
+    color: #fff !important;
+    margin-top:0;
+}
+.contbtn  a{
+    width:290px;
+    height:50px;
+    display: block;
+    padding:15px;
+    background:#cc0000;
+    color:#fff !important;
+    font-size:16px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.contbtn a:hover{
+    background: #8a0000;
+}
+.conttxt p, .conttxt a, .conttxt h2 {
+    font-size:14px;
+    color:#999 !important;
+}
+.conttxt h2{
+    font-size: 18px;
+    font-family: 'KievitSlabOT-Book', Helvetica, sans-serif;
+    font-weight: normal;
+    margin-top: 0;
+}
+.partners{
+    margin-top:20px;
+}
+.partners p{
+    color: #fff !important;
+    font-size: 25px;
+    font-family: 'KievitSlabOT-Light', sans-serif;
+}
+.partnerstext{
+    width:100%;
+    float:right;
+    padding:2%;
+    text-align:right;
+}
+.partnersimg{
+    width:45%;
+    float:left;
+    padding:2%;
+    text-align:left;
+}
+
+.hubspotswdiv h2{
+    color: #fff;
+    font-family: "KievitSlabWeb-Bold", Helvetica, sans-serif;
+    font-size:36px;
+    text-align: center;
+    margin:30px 5px 5px;
+}
+.hubspotswdiv h3{
+    color: #003366;
+    font-family: "KievitSlabScWeb-MediumItalic", Helvetica, sans-serif;
+    font-size:27px;
+    text-align: center;
+    margin:5px;
+}
+.hubspotswdiv, .hubspotswbc{
+    background:#6699cc;
+    height:300px;
+}
+
+ 
+ /* Free-eBook Landing Page */
+ 
+ .headereBook h1{
+    font-size: 42px;
+    color: #66ccff;
+    font-weight: normal;
+    font-family: 'KievitSlabOT-Book', sans-serif;
+ }
+ 
+ .eBookdivText h1{
+    font-size: 50px;
+    margin: 20px 0 10px;
+    padding: 0;
+ }
+ .eBookdivText p{
+     font-size:17px;
+ }
+ 
+ .eBookdivText h4{
+    font-size: 30px;
+    margin: 30px 0 15px;
+    padding: 0;
+ }
+ .eBookdivText h2{
+    font-size: 30px;
+    margin: 20px 0 10px;
+    padding: 0;
+ }
+ .eBookdivText .hs_cos_wrapper_type_social_sharing{
+     margin-bottom:10px;
+     display:block;
+ }
+.eBookdivText h4, .eBookdivText h2, .eBookdivText h3, .eBookFormdiv h3, h1 em, h2 em, h3 em{
+   font-family:'KievitSlabOT-Book', sans-serif;
+   font-weight:normal;
+}
+.hshare h3{
+    font-family: 'KievitSlabOT-Light', sans-serif;
+}
+h1 em, h2 em, h3 em{
+   font-style:normal;
+}
+.eBookdivText .hs-image-widget{
+    margin-top: 20px;
+}
+.eBookdivText h4, .eBookFormdiv h3, .eBookFormdiv h5, .eBookdivText h2 em{
+   font-style: italic;
+ }
+ .eBookdivText h1{
+   font-family:'KievitSlabOT-Book', sans-serif;
+   font-weight:normal;
+ }
+ 
+ .eBookFormdiv h3{
+    font-size: 31px;
+    margin-top:0;
+ }
+ .hshare h3{
+    font-size: 23px;
+    margin-top:0;
+ }
+ 
+ .eBookFormdiv{
+    color: #fff;
+ }
+ 
+ .eBookTextdiv ul{
+    padding-left: 15px;    
+ }
+ 
+ .eBookFormdiv .hs-form-field{
+    margin: 15px 0 !important;
+ }
+ 
+ .eBookFormdiv input[type="text"], input[type="email"] {
+    background-color: #e5e5e5;
+    Border: none;
+    color: #b5b4b4;
+    text-transform: uppercase;
+    width: 250px;
+    height: 40px;
+ }
+ 
+ .eBookFormdiv select.hs-input{
+    background-color: #e5e5e5;
+    Border: none;
+    color: #b5b4b4;
+    text-transform: uppercase;
+    width: 250px;
+    height: 40px;
+    padding: 10px 0;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+ }
+ 
+ .eBookFormdiv ul{
+    list-style: none;
+ }
+ 
+ .inputs-list{
+    padding: 0;
+    margin: 0;
+ }
+ 
+ .eBookFormdiv input[type="checkbox"] .hs-input{
+    margin: 0;
+    padding: 0;
+ }
+ 
+ .eBookFormdiv .actions{
+    height: 50px;
+    width: 250px;
+ }
+ 
+ .eBookFormdiv input[type="submit"].hs-button {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    background: #cc0000;
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    font-family:'KievitSlabOT-Book', sans-serif;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+ }
+.landing-autor{ margin-top:25px; }
+.landing-autor *{
+   font-family:'KievitSlabOT-Book', sans-serif;
+   font-weight:normal;
+}
+.landing-autor p, .landing-subtitulo h2{ 
+    color:#FFF;
+}
+.landing-subtitulo h2{ margin-top:10px; }
+.landing-autor h1{ 
+    line-height: .5em;
+    color:#FFF;
+    font-size:17px;
+ font-family: 'KievitSlabWeb-Medium';
+}
+.landing-autor h2{ 
+    line-height: .5em;
+    color:#66ccff;
+    margin-bottom: 0;
+    font-style: italic;
+    font-size:17px;
+}
+ 
+ /* Social Sharing */
+ 
+ .hs_cos_wrapper_type_social_sharing a img{ 
+     display:none;
+ } 
+ 
+ .hs_cos_wrapper_type_social_sharing a{ 
+    width:50px !important; 
+    height:50px;
+    background-repeat: no-repeat;
+    display:inline-block; 
+    background-size: 100%;
+ }
+ 
+ /*Thank You Page */
+ 
+ .btnFormExtra input[type="submit"].hs-button{
+    font-size: 25px;
+    font-family:'KievitSlabOT-Book', sans-serif;
+    font-style: oblique;
+ }
+ 
+/* Librería  */
+.libreriatop{
+    height:420px !important;
+}
+
+
+/* BLOG */
+
+.post-listing .post-item{
+  -webkit-box-shadow: 0px -4px 4px 0px #CCC;
+          box-shadow: 0px -4px 4px 0px #CCC;
+          padding: 20px 0;
+          background-color: #FFF;
+          position: relative;
+}
+.post-listing .odd-post{ background: #f2f2f2; }
+.post-listing .first-post{
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 500px;
+  padding: 0;
+  margin-bottom: -28px;
+}
+
+.post-overlay{
+  background-color: rgba(0,0,0, 0.5);
+  position: absolute;
+  top: 0; left: 0; z-index: 1;
+  width: 100%; height: 100%;
+}
+
+.post-listing .post-header{ 
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.post-listing .first-post .post-header{
+  position: absolute; z-index: 10;
+  bottom: 55px; left: 50%; margin-left: -232px;
+  width: 550px;
+}
+.post-image{ width: 25%; }
+.post-image span{ 
+  width: 100%;
+  height: auto;
+  margin-right: 20px;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  vertical-align: top;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  filter: gray; 
+  -webkit-filter: grayscale(100%);
+}
+.post-item:hover .post-image span{ 
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(0%);
+}
+.post-header .post-info{ width: 540px; display:inline-block; }
+
+.blog *, .blog-search .gsc-control-cse{ font-family:'KievitSlabOT-Book', sans-serif; }
+.post-listing h2 a{
+  color: #999;
+  font-size: 55px;
+  line-height: 106%;
+  text-decoration: none;
+}
+.post-listing .post-item:hover h2 a{ color: #666; }
+.post-listing .post-item p{ font-size: 20px; }
+.post-listing .first-post h2 a, .post-listing .first-post:hover h2 a{ color: #FFF; margin-bottom: 20px; }
+.blog h2, .blog .date{ display: inline; font-weight: normal; }
+.blog .date, .author-bio{ color: #8CB2D8; font-size: 20px; }
+.blog .first-post .date{ color: #DDEDF8; }
+
+.post-listing .post-item:hover{    background-color: #DDEEF9; }
+.post-listing .first-post .social-share-data{ background: rgba(255,255,255,0.65); padding: 10px 15px; margin-top: 15px; }
+.post-listing .social-share-data{
+    padding: 10px 0;
+    width: 512px; height: 40px;
+    overflow: hidden;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.post-listing .social-share-data > span{ font-size: 16px; line-height: 20px; margin: 0 10px 0 0; float: left; }
+.post-listing{
+  -webkit-box-shadow: 0px 4px 4px 0px #CCC;
+          box-shadow: 0px 4px 4px 0px #CCC;
+}
+.blog-pagination{
+  padding: 90px 0 80px;
+  text-align: center;
+}
+.all-posts-link{
+  background: #999;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-clip: padding-box;
+  color: #FFF; text-decoration: none;
+  display: inline-block;
+  padding: 0 15px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 20px;
+}
+
+.blog-sidebar{ 
+  background: rgba(242,242,242,0.8); 
+  padding: 15px; 
+  width: 200px;
+  position: absolute;
+  top: 500px;
+  z-index: 20;
+  left: 50%;
+  margin-left: 312px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.blog .blog-sidebar p, .blog .blog-sidebar h3, .blog .blog-sidebar input[type="email"]{ color: #666; font-family: 'KievitSlabOT-Light', sans-serif; font-size: 17px; }
+.blog .blog-sidebar h3{ font-family:'KievitSlabWeb-Bold', sans-serif; font-weight: normal; }
+.blog-sidebar input[type="email"], .blog-search input.gsc-input{
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+    background:#FFF;
+    font-size:18px;
+    padding: 0 10px;
+    color: #999;
+    border: 1px solid #999;
+    width:100%;
+    height: 45px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.blog-sidebar input[type="submit"], .blog-search input.gsc-search-button{
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+    background:#cc0000;
+    font-size:20px;
+    line-height: 45px;
+    color: #FFF;
+    border: none;
+    width:100%; padding: 0; margin: 0;
+    text-align: center;
+    cursor: pointer;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.blog-sidebar .hs_submit{ padding-top: 10px; }
+.blog-subscribe label, .blog-search td.gsc-clear-button{ display: none; }
+
+.blog-recent{ padding: 20px 0 10px; }
+.blog-recent .block ul, .blog-recent .inputs-list{
+    list-style: none;
+    padding: 0;
+}
+.blog-recent .block ul li a{
+  background: url(http://cdn2.hubspot.net/hub/308283/file-503690788-png/Img_Site/bullet.png) 0 -8px no-repeat;
+  padding-left: 12px;
+  font-size:18px;
+  display: block;
+  color: #999;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.blog-recent .block ul li a:hover{ color: #666; background-position: -12px 6px; }
+.blog-sidebar .blog-recent h3{ font-size: 20px; }
+
+.blog-search .gsc-control-cse, .blog-search form.gsc-search-box{ 
+  background: none;
+  padding: 0;
+  border: none;
+}
+.blog-search input.gsc-input{ width: 100%; }
+.blog-search table.gsc-search-box td.gsc-search-button, .blog-search table.gsc-search-box td.gsc-input{
+  display: block;
+  width: 100%;
+  padding:0 0 10px 0;
+}
+.blog-search input.gsc-search-button{ float: none; min-width: 90%; height: 45px; font-weight: normal; }
+
+/*.blog .date, .author-bio, .post-body h5{font-family: 'KievitSlabOT-Light', sans-serif; font-style: italic;}
+#hubspot-author_data{ position: absolute; bottom: 0; left: 10px; margin: 0; }
+.hs-author-avatar{
+    float: left;
+    margin-right: 10px;
+}
+.hs-author{
+    float: left;
+    width: 300px;
+}
+.hs-author-label{ color: #999; margin-bottom: 10px; display: block; padding-top: 30px; }
+.author-link{ color: #333; font-family:'KievitSlabWeb-Bold', sans-serif; display: block; font-size: 18px; text-decoration: none; }
+.post-body img:first-child{ display: none; }
+.post-body{ padding: 20px; }
+.post-body p{ font-size: 18px; font-family:'KievitSlabOT-Book', sans-serif; }
+.post-body h5{ font-size: 16px; color:#999; font-weight: normal; margin: 10px 0; }
+.blog-comments{ padding: 0 20px 35px; }
+.blog-listing-wrapper, .blog-comments{ background: #333; }
+.blog-comments #comment-form h4{ font-size: 40px; color: #3399CB; }
+.blog-comments #comment-form label, .blog-comments #comment-form input, .blog-comments #comment-form textarea{ font-family:'KievitSlabOT-Book', sans-serif; font-size: 14px; text-transform: uppercase; color: #FFF; }
+.blog-comments #comment-form input[type="text"], .blog-comments #comment-form input[type="email"], .blog-comments #comment-form textarea{ font-size: 20px; color: #999; width: 70%; height: 50px; padding: 10px; border-bottom: 1px solid #999; border-top: 1px solid #999; border-left: none; border-right: none; margin-bottom: 15px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+ }
+ .blog-comments #comment-form textarea{ width: 100%; height: 120px;}
+.blog-comments #comment-form input[type="submit"]{ font-size: 25px; color: #FFF; width: 30%; height: 60px; background: #CB0000; padding: 10px; border: none;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-clip: padding-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          float: right;
+ }
+ .blog-comments input[type="checkbox"]{ width: 25px; height: 25px; margin: 0; }
+ .blog-comments .follow-up-field{ float: left; width: 30%; font-family:'KievitSlabOT-Book', sans-serif; }
+ .blog-comments #comment-form .follow-up-field label{ text-transform: none; font-style: italic; font-size: 20px; }*/
+  
+ /* MEDIA QUERYS */ 
+  
+@media (max-width: 480px) {
+ 
+.topbutton a{
+        background-color: #cc0000;
+        border-radius: 5px !important;
+        text-align: center;
+        padding: 5px 35px !important;
+        margin: 15px auto;
+        max-width: 80%;
+        color: #fff !important;
+        text-decoration: none !important;
+        display: block !important;
+}
+.ulbot{
+     position:absolute !important;
+     top:0px !important;
+     right: 0px !important;
+ }
+
+ .ulbot ul li {
+    float: right;
+    width:100%;
+    border-bottom: 1px solid #333333;
+    padding: 12px 0;
+    background:#000;
+ }
+ .ulbot ul li a{
+     width:90%;
+     background:#000;
+     text-align:center;
+     max-width:100% !important;
+ }
+ 
+ }
+ 
+ @media (max-width: 640px) {
+ .headerprueba{
+     width:100% !important;
+ }
+ .logo{
+    margin:-10px 0 10px 25px !important;
+ }
+ .logo img{
+     width:auto !important;
+ }
+ .ulbot{
+     position:absolute !important;
+     top:0px !important;
+     right: 0px !important;
+ }
+
+ .ulbot ul li {
+    float: right;
+    width:100%;
+    border-bottom: 1px solid #333333;
+    padding: 12px 0;
+    background:#000;
+ }
+ .ulbot ul li a{
+     width:90%;
+     background:#000;
+     text-align:center;
+     max-width:100% !important;
+ }
+ .ctatopmenu{
+     display: none !important;
+ }
+ .stagetop h1{
+     margin: 100px 0 0;
+ }
+ 
+ .contenedor{
+     width:100% !important;
+ }
+ 
+ .razonesbc {
+    width:100% !important;
+    height: auto !important;
+ }
+ .growdiv{
+    height:auto;
+}
+ .ampliabox{
+    height: auto !important;
+    overflow: hidden;
+ }
+ 
+ .stagetop h1{
+     font-size:50px !important;
+     line-height:54px !important;
+ }
+  .stagetop h2{
+     font-size:22px !important;
+     line-height:24px !important;
+ }
+ .middlebox h1, .exitobc h1, .ampliabc h1{
+     width: 100%;
+     font-size:40px;
+     line-height: 44px;
+ }
+ 
+ } 
+
+ @media (max-width: 1024px) {
+  .post-listing .post-header{ 
+    width: 90%;
+  }
+  .post-listing .first-post .post-header{
+    left: 5%; margin: 0;
+  }
+  .post-listing .social-share-data{
+    padding: 10px 15px;
+    width: 90%; height: auto;
+  }
+  .blog-sidebar{
+    position: inherit;
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+ }
+  
+  
+  
+  
