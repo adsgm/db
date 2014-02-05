@@ -812,6 +812,76 @@ h1{
     font-family: 'KievitSlabWeb-Book', Helvetica, sans-serif;
 }
 
+/*Pagina Inbound Final*/
+.block1inbound, .block4inbound, .block6inbound{
+    background: #fff;
+    border-bottom: 1px solid #333;
+    height: 620px;
+}
+.block1inbound{
+    height: 520px;
+}
+.block1inbound{
+    height: 650px;
+}
+.block2inbound,.block3inbound, .block5inbound, .block7inbound{
+    background: #EEF1F5;
+    border-bottom: 1px solid #333;
+    height: 620px;
+}
+.block2inbound{
+    height: 220px;
+}
+.block1inbound p, .block2inbound p, .block3inbound p, .block4inbound p, .block5inbound p, .block6inbound p{
+    font-family: 'KievitSlabOT';
+    font-weight: normal;
+    font-size: 22px;
+    color: #666;
+    margin: 10px;
+}
+.block1inbound h1{
+    font-family: 'KievitSlabOT';
+    font-weight: normal;
+    font-size: 50px;
+    color: #6699CC;
+    text-align: center;
+    margin: 30px 10px 10px;
+}
+.block1inbound h2, .block2inbound h2{
+    font-family: 'KievitSlabOT';
+    font-weight: normal;
+    font-size: 45px;
+    color: #6699CC;
+    text-align: center;
+    margin: 10px;
+}
+.block2inbound h1, .block3inbound h1, .block4inbound h1, .block5inbound h1, .block6inbound h1{
+    font-family: 'KievitSlabWeb-Bold';
+    font-weight: normal;
+    font-size: 49px;
+    color: #6699CC;
+    text-align: center;
+    margin: 30px 10px 10px;
+}
+.blueboxinbound2{
+    height: 330px;
+    background: #6699CC;
+}
+.blueboxinbound2 h1{
+    color:#fff;
+    font-size: 36px;
+    font-family: 'KievitSlabOT-Bold';
+    font-weight: normal;
+    text-align: center;
+}
+.blueboxinbound2 h2 {
+    color:#003365;
+    font-size: 27px;
+    font-family: 'KievitSlabOT-Book';
+    font-weight: normal;
+    font-style: oblique;
+    text-align: center;
+}
 /* Footer*/
 .footerbox{
     width:100%;
@@ -1108,16 +1178,17 @@ h1 em, h2 em, h3 em{
           box-shadow: 0px -4px 4px 0px #CCC;
           padding: 20px 0;
           background-color: #FFF;
-          position: relative;
 }
+.post-listing .post-item, .blog-post-wrapper .post-item{ position: relative; }
 .post-listing .odd-post{ background: #f2f2f2; }
-.post-listing .first-post{
+.post-listing .first-post, .blog-post-wrapper .post-item{
   -webkit-background-size: cover;
   background-size: cover;
   height: 500px;
   padding: 0;
   margin-bottom: -28px;
 }
+.blog-post-wrapper .post-item{ margin-bottom: 0; }
 
 .post-overlay{
   background-color: rgba(0,0,0, 0.5);
@@ -1131,11 +1202,12 @@ h1 em, h2 em, h3 em{
   margin: 0 auto;
 }
 
-.post-listing .first-post .post-header{
+.post-listing .first-post .post-header, .blog-post-wrapper .post-header{
   position: absolute; z-index: 10;
-  bottom: 55px; left: 50%; margin-left: -232px;
+  bottom: 55px; left: 50%; margin-left: -255px;
   width: 550px;
 }
+.blog-post-wrapper .post-header{ margin-left: -512px; }
 .post-image{ width: 25%; display: inline-block; resize:both; vertical-align: top; }
 .post-image span{ 
   width: 90%;
@@ -1158,13 +1230,14 @@ h1 em, h2 em, h3 em{
 .post-header .post-info{ width: 52%; display:inline-block; }
 
 .blog *, .blog-search .gsc-control-cse{ font-family:'KievitSlabOT-Book', sans-serif; }
-.post-listing h2 a{
+.post-header h2, .post-header h2 a{
   color: #999;
   font-size: 55px;
   line-height: 106%;
   text-decoration: none;
 }
 .post-listing .post-item:hover h2 a{ color: #666; }
+.blog-post-wrapper h2{ color: #FFF; }
 .post-listing .post-item p{ font-size: 20px; }
 .post-listing .first-post h2 a, .post-listing .first-post:hover h2 a{ color: #FFF; margin-bottom: 20px; }
 .blog h2, .blog .date{ display: inline; font-weight: normal; }
@@ -1280,6 +1353,25 @@ h1 em, h2 em, h3 em{
 }
 .blog-search input.gsc-search-button{ float: none; min-width: 90%; height: 45px; font-weight: normal; }
 
+.post-body{ width: 780px; padding-top: 20px; }
+.post-author{
+    width: 18%;
+    display: inline-block;
+    vertical-align: top;
+}
+.post-content{
+    width: 82%;
+    display: inline-block;
+}
+.hs-author-avatar{
+  width: 90%;
+  height:0;
+  margin: 0 auto 15px;
+  padding-bottom: 90%;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
 /*.blog .date, .author-bio, .post-body h5{font-family: 'KievitSlabOT-Light', sans-serif; font-style: italic;}
 #hubspot-author_data{ position: absolute; bottom: 0; left: 10px; margin: 0; }
 .hs-author-avatar{
